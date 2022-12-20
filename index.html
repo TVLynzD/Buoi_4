@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+    <style>
+        .container {
+            width: 1000px;
+            position: relative;
+        }
+        .container:hover img {
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+        .container:hover .block {
+            transform: translateY(-10px);
+            transition: 0.3s;
+            opacity: 1;
+        }
+        .container:hover .content {
+            transform: translateY(-200px);
+            transition: 0.3s;
+            opacity: 1;
+        }
+        img {
+            width: 100%;
+        }
+        div.block {
+            padding: 1cm;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            height: 100px;
+            background-color: wheat;
+            width:100%;
+            opacity: 0;
+        }
+        div.content {
+            color: whitesmoke;
+            position: absolute;
+            bottom: 10%;
+            left: 47%;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="/Buoi_3/pictue/6291855.jpg" alt="">
+        <div class="block">
+            <p>TRAN THI THANH VINH</p>
+            <p>TT</p>
+        </div>
+        <div class="content">
+            <p>PROFILE</p>
+        </div>
+    </div>
+</body>
+</html>
